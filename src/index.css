@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url('https://fonts.cdnfonts.com/css/death-note-font'); */
+body{
+  background-color: beige;
+}
+.bangers-regular {
+  font-family: "Bangers", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.title{
+  width: 90%;
+  color: white;
+  background-color: green;
+}
+.anime-list{
+  width: 99%;
+}
+.anime-card{
+  transition: transform 0.3s ease-in-out;
+}
+.anime-card:hover{
+  transform: scale(.9);
+  cursor: pointer;
+  box-shadow: 5px 2px rgb(0, 128, 0,.5);}
