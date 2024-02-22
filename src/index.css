@@ -9,7 +9,18 @@ body {
     rgb(255, 148, 114)
   );
 }
-
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+ display: none;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: black;
+  border-radius: 10px;
+}
 body {
   font-family: "Bangers", system-ui;
   font-weight: 400;
@@ -32,4 +43,15 @@ body {
   transform: scale(0.9);
   cursor: pointer;
   box-shadow: 5px 2px rgb(0, 0, 0, 0.3);
+}
+/* .input{
+  width: 90%;
+} */
+.input input{
+  width: 80%;
+  border-radius: 10px;
+}
+button{
+  /* background-color: black; */
+  color: black;
 }

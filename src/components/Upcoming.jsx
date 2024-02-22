@@ -19,10 +19,17 @@ const Upcoming = () => {
   }, []);
   return (
     <>
+      <div className="input flex flex-row justify-center items-center pb-9">
+        <input
+          type="text"
+          placeholder="Search..."
+          class=" bg-white h-10 px-5 pr-10 rounded-fullfocus:outline-none focus:shadow-outline-purple text-2xl"
+        />
+      </div>
       <div className="anime-list flex flex-row justify-center items-center flex-wrap gap-3 mb-6">
         {upcomimg.map((list, index) => {
           return (
-            <div className=" rounded-lg overflow-hidden anime-card  ">
+            <div className=" rounded-lg overflow-hidden anime-card  " key={index}>
               <img
                 className="w-full h-80 object-cover object-center"
                 src={list.images.jpg.image_url}
