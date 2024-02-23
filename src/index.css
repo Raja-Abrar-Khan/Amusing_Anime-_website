@@ -3,22 +3,23 @@
 @tailwind utilities;
 /* @import url('https://fonts.cdnfonts.com/css/death-note-font'); */
 body {
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
     to right,
     rgb(242, 112, 156),
     rgb(255, 148, 114)
-  );
+  ); */
+  background-color: black;
 }
 ::-webkit-scrollbar {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
- display: none;
+  display: none;
 }
- 
+
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background-color: black;
+  background-color: white;
   border-radius: 10px;
 }
 body {
@@ -36,22 +37,52 @@ body {
 }
 .anime-card {
   transition: transform 0.3s ease-in-out;
-  height: 500px;
+  height: 600px;
   width: 400px;
+  border: 1px solid blueviolet;
+  color: white;
+  letter-spacing: 2px;
 }
+
 .anime-card:hover {
   transform: scale(0.9);
   cursor: pointer;
-  box-shadow: 5px 2px rgb(0, 0, 0, 0.3);
+  box-shadow: 3px 4px rgba(160, 32, 240);
+  color: blueviolet;
 }
 /* .input{
   width: 90%;
 } */
-.input input{
+.input input {
   width: 80%;
   border-radius: 10px;
 }
-button{
+button {
   /* background-color: black; */
-  color: black;
+  color: blueviolet;
+}
+.logo-image {
+  height: 100px;
+  width: 100px;
+}
+.details-image {
+  height: 500px;
+  width: 400px;
+  border: 3px solid white;
+  cursor: pointer;
+}
+.anime-details-1 {
+  background-color: black;
+  padding: 20px;
+  color: white;
+  cursor: pointer;
+}
+.anime-details-1:hover {
+  background-color: blueviolet;
+  .details-heading {
+    color: white;
+  }
+}
+.details-heading {
+  color: blueviolet;
 }

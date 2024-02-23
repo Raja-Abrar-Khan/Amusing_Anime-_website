@@ -5,6 +5,7 @@ import { APIContextProvider } from "./Context";
 import Header from "./components/Header";
 import Upcoming from "./components/Upcoming";
 import Airing from "./components/Airing";
+import SingleAnime from "./components/SingleAnime";
 function App() {
   return (
     <>
@@ -15,6 +16,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/upcomimg" element={<Upcoming/>} />
             <Route path="/airing" element={<Airing/>} />
+            <Route path="/singleanime/:mal_id" element={<SingleAnime/>} />
           </Routes>
         </BrowserRouter>
       </APIContextProvider>
