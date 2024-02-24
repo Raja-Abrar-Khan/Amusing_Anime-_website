@@ -18,6 +18,15 @@ const Header = () => {
         <div className=" text-2xl">
           <Link to="/airing">Airing</Link>
         </div>
+        <div className=" text-2xl">
+          <Link to="/genre">Genre</Link>
+        </div>
+        <div className=" text-2xl">
+          <Link to="/manga">Manga</Link>
+        </div>
+        <div className=" text-2xl">
+          <Link to="/magazines">Magazines</Link>
+        </div>
       </div>
     </>
   );

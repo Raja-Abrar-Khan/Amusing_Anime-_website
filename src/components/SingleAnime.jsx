@@ -6,6 +6,7 @@ const SingleAnime = () => {
   const { id } = useParams();
   const [topanime, setTopAnime] = useState([]);
   const [topanimeep, setTopAnimeEp] = useState([]);
+  const [showmore, setShowMore] = useState(false);
   useEffect(() => {
     async function topAnimeFetchData() {
       try {
@@ -39,7 +40,8 @@ const SingleAnime = () => {
       <div className="anime-details flex flex-col justify-center items-center ">
         <div className="anime-details-1 flex flex-row justify-evenly items-center w-11/12 my-5">
           <div className="animeinfo flex flex-col justify-start items-start w-2/4 gap-3">
-            <h1 className="text-7xl details-heading">{topanime?.title}</h1>
+            <h1 className="text-7xl details-heading">{topanime?.title}
+            </h1>
             <p className="text-xl">
               <Link
                 className="text-7xl"
@@ -52,7 +54,14 @@ const SingleAnime = () => {
             <p className="text-xl">{topanime?.title_japanese}</p>
             <p className="text-xl">Episodes-{topanime?.episodes}</p>
             <p className="text-xl">{topanime?.season}</p>
-            <p className="text-xl">{topanime?.synopsis}</p>
+            <p className="text-xl">
+              {showmore
+                ? topanime?.synopsis
+                : `${topanime.synopsis?.substring(0,250)}`}
+            </p>
+            <button className="readmore text-2xl" onClick={() => setShowMore(!showmore)}>
+              {showmore ? "Readless" : "Readmore"}
+            </button>
           </div>
           <div className="animeimage">
             <img
