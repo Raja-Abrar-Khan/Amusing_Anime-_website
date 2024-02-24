@@ -89,6 +89,12 @@ button {
   padding: 20px;
   cursor: pointer;
 }
+.anime-details-3 {
+  color: white;
+  background-color: black;
+  padding: 20px;
+  cursor: pointer;
+}
 .episodes{
   list-style: none;
   border: 1px solid blueviolet;
