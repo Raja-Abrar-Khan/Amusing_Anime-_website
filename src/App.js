@@ -16,7 +16,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/upcomimg" element={<Upcoming/>} />
             <Route path="/airing" element={<Airing/>} />
-            <Route path="/singleanime/:mal_id" element={<SingleAnime/>} />
+            <Route path="/singleanime/:id" element={<SingleAnime/>} />
           </Routes>
         </BrowserRouter>
       </APIContextProvider>
