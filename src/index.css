@@ -8,7 +8,7 @@ body {
     rgb(242, 112, 156),
     rgb(255, 148, 114)
   ); */
-  background-color: black;
+  /* background-color: black; */
 }
 ::-webkit-scrollbar {
   width: 10px;
@@ -41,7 +41,7 @@ body {
   height: 600px;
   width: 400px;
   border: 1px solid blueviolet;
-  color: white;
+  /* color: white; */
   letter-spacing: 2px;
 }
 
@@ -57,6 +57,7 @@ body {
 .input input {
   width: 80%;
   border-radius: 10px;
+  border: 2px solid black;
 }
 button {
   /* background-color: black; */
@@ -95,6 +96,11 @@ button {
   padding: 20px;
   cursor: pointer;
 }
+.review{
+  border-bottom: 2px solid white;
+  padding: 20px;
+
+}
 .episodes{
   list-style: none;
   border: 1px solid blueviolet;
@@ -111,4 +117,11 @@ button {
 }
 .readmore{
   color: orange;
+}
+.genres{
+  height: 50px;
+  width: 150px;
+}
+.genres:hover{
+ color: blueviolet;
 }
