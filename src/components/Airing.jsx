@@ -52,7 +52,7 @@ const Airing = () => {
           id="search"
           placeholder="Search....."
           required
-          class=" bg-white h-10 px-5 pr-10 rounded-fullfocus:outline-none focus:shadow-outline-purple text-2xl"
+          class=" bg-black h-10 px-5 pr-10 rounded-fullfocus:outline-none focus:shadow-outline-purple text-2xl"
         />
         <button onClick={showAnime} className="text-3xl button">
           Search
